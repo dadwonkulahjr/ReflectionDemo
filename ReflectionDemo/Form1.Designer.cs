@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Location = new System.Drawing.Point(25, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 18);
             this.label1.TabIndex = 0;
@@ -51,17 +51,18 @@
             // 
             // txtTypeName
             // 
-            this.txtTypeName.Location = new System.Drawing.Point(108, 24);
+            this.txtTypeName.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTypeName.Location = new System.Drawing.Point(121, 12);
             this.txtTypeName.Name = "txtTypeName";
-            this.txtTypeName.Size = new System.Drawing.Size(442, 20);
+            this.txtTypeName.Size = new System.Drawing.Size(442, 35);
             this.txtTypeName.TabIndex = 1;
             // 
             // btnDiscoverTypeInfo
             // 
             this.btnDiscoverTypeInfo.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiscoverTypeInfo.Location = new System.Drawing.Point(565, 17);
+            this.btnDiscoverTypeInfo.Location = new System.Drawing.Point(578, 12);
             this.btnDiscoverTypeInfo.Name = "btnDiscoverTypeInfo";
-            this.btnDiscoverTypeInfo.Size = new System.Drawing.Size(259, 32);
+            this.btnDiscoverTypeInfo.Size = new System.Drawing.Size(680, 35);
             this.btnDiscoverTypeInfo.TabIndex = 2;
             this.btnDiscoverTypeInfo.Text = "Discover Type Information";
             this.btnDiscoverTypeInfo.UseVisualStyleBackColor = true;
@@ -69,19 +70,20 @@
             // 
             // lbMethods
             // 
-            this.lbMethods.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMethods.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMethods.FormattingEnabled = true;
-            this.lbMethods.ItemHeight = 20;
-            this.lbMethods.Location = new System.Drawing.Point(15, 87);
+            this.lbMethods.ItemHeight = 29;
+            this.lbMethods.Location = new System.Drawing.Point(12, 84);
             this.lbMethods.Name = "lbMethods";
-            this.lbMethods.Size = new System.Drawing.Size(353, 444);
+            this.lbMethods.Size = new System.Drawing.Size(386, 439);
             this.lbMethods.TabIndex = 3;
+            this.lbMethods.SelectedIndexChanged += new System.EventHandler(this.LbMethods_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 59);
+            this.label2.Location = new System.Drawing.Point(55, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 22);
             this.label2.TabIndex = 4;
@@ -91,7 +93,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(397, 59);
+            this.label3.Location = new System.Drawing.Point(562, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 22);
             this.label3.TabIndex = 6;
@@ -99,19 +101,20 @@
             // 
             // lbProperties
             // 
-            this.lbProperties.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProperties.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProperties.FormattingEnabled = true;
-            this.lbProperties.ItemHeight = 20;
-            this.lbProperties.Location = new System.Drawing.Point(374, 87);
+            this.lbProperties.ItemHeight = 29;
+            this.lbProperties.Location = new System.Drawing.Point(431, 84);
             this.lbProperties.Name = "lbProperties";
-            this.lbProperties.Size = new System.Drawing.Size(289, 444);
+            this.lbProperties.Size = new System.Drawing.Size(386, 439);
             this.lbProperties.TabIndex = 5;
+            this.lbProperties.SelectedIndexChanged += new System.EventHandler(this.LbProperties_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(773, 59);
+            this.label4.Location = new System.Drawing.Point(885, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 22);
             this.label4.TabIndex = 8;
@@ -119,19 +122,20 @@
             // 
             // lbConstructors
             // 
-            this.lbConstructors.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConstructors.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConstructors.FormattingEnabled = true;
-            this.lbConstructors.ItemHeight = 20;
-            this.lbConstructors.Location = new System.Drawing.Point(682, 87);
+            this.lbConstructors.ItemHeight = 29;
+            this.lbConstructors.Location = new System.Drawing.Point(871, 84);
             this.lbConstructors.Name = "lbConstructors";
-            this.lbConstructors.Size = new System.Drawing.Size(315, 444);
+            this.lbConstructors.Size = new System.Drawing.Size(386, 439);
             this.lbConstructors.TabIndex = 7;
+            this.lbConstructors.SelectedIndexChanged += new System.EventHandler(this.LbConstructors_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 538);
+            this.ClientSize = new System.Drawing.Size(1270, 538);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbConstructors);
             this.Controls.Add(this.label3);
